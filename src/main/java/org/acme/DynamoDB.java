@@ -247,6 +247,7 @@ public class DynamoDB {
                 .attributeDefinitions(attributeDefinitions)
                 .keySchema(KeySchema)
                 .globalSecondaryIndexes(globalSecondaryIndexes)
+                .billingMode(BillingMode.PAY_PER_REQUEST)
                 .build();
 
         CreateTableResponse createTableResponse = dynamoDbClient.createTable(request);

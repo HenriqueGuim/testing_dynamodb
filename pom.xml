@@ -18,11 +18,7 @@
   </properties>
   <dependencyManagement>
     <dependencies>
-      <dependency>
-        <groupId>software.amazon.awssdk</groupId>
-        <artifactId>protocol-core</artifactId>
-        <version>2.18.18</version>
-      </dependency>
+
       <dependency>
         <groupId>${quarkus.platform.group-id}</groupId>
         <artifactId>${quarkus.platform.artifact-id}</artifactId>
@@ -59,6 +55,11 @@
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-arc</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>software.amazon.awssdk</groupId>
+      <artifactId>url-connection-client</artifactId>
+      <version>2.18.18</version>
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
